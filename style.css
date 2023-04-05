@@ -39,14 +39,10 @@ hr {
   font-size: 16px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
-.toggle button {
-  margin-left: -5.2rem;
-  width: 3rem;
-  background-color: hsl(228, 34%, 66%);
-  border: none;
-  border-radius: 10rem;
-  color: white;
+.toggleBtn {
+ margin-right: 1.2rem;
 }
 
 /* Grid items */
@@ -188,6 +184,62 @@ hr {
   margin-left: 0.5rem;
 }
 
+/* toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;    
+    height: 23px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    /* background-color: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); */
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: hsl(228, 28%, 20%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: white;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+/* end of toggle button */
+
 /* start of destop view */
 @media (min-width: 760px) {
   * {
@@ -207,12 +259,15 @@ hr {
     justify-content: space-between;
   }
   .toggle {
-    margin-right: 8rem;
+    margin-right: 9.5rem;
     margin-top: 1rem;
   }
   .toggle p {
-    margin-right: 6rem;
+    margin-right: 1rem;
   }
+  .toggleBtn {
+    margin-right: -0.5rem;
+   }
 
   /* start of first grid */
   .firstGrid {
