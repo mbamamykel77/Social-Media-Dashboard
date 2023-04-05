@@ -116,8 +116,8 @@ hr {
 /* end of first grid */
 
 /* start of second div */
-.second-grid{
-    margin-bottom: 2rem;
+.seconGrid-container{
+    margin-bottom: 2.5rem;
 }
 .second_gridItem {
   background-color: hsl(228, 28%, 20%);
@@ -235,6 +235,8 @@ hr {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     width: 89%;
   }
-
+  .seconGrid-container{
+    margin-bottom: 3.5rem;
+}
 
 }
