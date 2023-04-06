@@ -158,8 +158,19 @@ hr {
   width: 1.5rem;
   margin-top: -1.5rem;
 }
-
-.stat_2 i {
+.down i{
+    color: hsl(348, 97%, 39%);
+    font-weight: bold;
+  margin-top: 3rem;
+  margin-left: -1.9rem;
+}
+.down p{
+    color: hsl(348, 97%, 39%);
+}
+.up p{
+    color: hsl(163, 72%, 41%);
+}
+.up i {
   color: hsl(163, 72%, 41%);
   font-weight: bold;
   margin-top: 3rem;
@@ -175,7 +186,6 @@ hr {
 }
 .stat_icon p {
   margin-top: -1rem;
-  color: hsl(163, 72%, 41%);
   font-weight: bold;
 }
 .plenty img {
@@ -258,13 +268,14 @@ input:checked + .slider:before {
   hr {
     display: none;
   }
+
   /* header */
   .header {
     display: flex;
     justify-content: space-between;
   }
   .toggle {
-    margin-right: 9.5rem;
+    margin-right: 10rem;
     margin-top: 1rem;
   }
   .toggle p {
@@ -272,6 +283,11 @@ input:checked + .slider:before {
   }
   .toggleBtn {
     margin-right: 0.1rem;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: row;
   }
 
   /* start of first grid */
