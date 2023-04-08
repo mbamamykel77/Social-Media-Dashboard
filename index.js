@@ -7,37 +7,7 @@ let body = document.querySelector('body')
 
 
 toggleBtn.addEventListener('change', () => {
-    body.classList.toggle('light');
+    body.classList.toggle('light-theme');
   })
 
-// toggleBtn.addEventListener('click', function(){
-//     if (!buttonClicked) {
-//         body.style.backgroundColor = 'white'
-//         media.style.color = 'black'
-//         grey1.style.color = 'hsl(228, 12%, 44%)'
-//         grey2.style.color = 'hsl(228, 12%, 44%)'
-//         for (let i = 0; i < card.length; i++){
-//             card.style.backgroundColor = 'red'
-//     }
-//     }
-//     else{
-//         body.style.backgroundColor = 'green'
-//     }
-// })
-
-
-
-// let lightMode = false;
-
-//   toggleBtn.addEventListener('click', function(){
-//     if(!lightMode){
-//     // body.classList.toggle('light');
-//     body.style.backgroundColor = 'white'
-//     media.style.color = 'black'
-//     } else if (lightMode){
-//         body.classList.remove('light');
-//         media.style.color = 'red'
-//         // body.style.backgroundColor = 'black'
-//     }
-//   });
 
